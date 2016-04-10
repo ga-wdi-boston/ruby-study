@@ -27,7 +27,7 @@ then reverses that array returning and modifying the refrence to the original
 array.
 
 ```ruby
-  [23,56,3,7].reverse.sort!
+  [23,56,3,7].sort!.reverse!
 ```
 
 What does an exclamation point after a method usually signify?
@@ -40,8 +40,15 @@ What does an exclamation point after a method usually signify?
 How do you create a class in Ruby?
 
 ```ruby
-  class
-  @@Vehicle
+  class Cat
+    def initialize
+      @lives = 9
+    end
+    def animal_sound
+      puts "Meow!"
+    end
+  end
+
 ```
 
 If I modify a class in Ruby will already created instances of that class have
@@ -54,7 +61,9 @@ the methods I added?
 Please give an example of iterating in Ruby?
 
 ```ruby
-  @names.each do |name|
+names = ['dan', 'bob', 'sam']
+
+  names.each do |name|
     puts "Hello #{name}!"
   end
 ```
