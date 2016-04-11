@@ -50,16 +50,16 @@ the methods I added?
 ```ruby
 yes, they will have the created instances you added if I am understanding your
 question correctly.
-```ß
+```
 
 Please give an example of iterating in Ruby?
 
 ```ruby
-fruit.each do |orange, orange|
-  fruit.gsub!(orange, red)
+@fruitstand.each do |fruit|
+  puts "Try this #{fruit}!"
 
 fruitstand.sort_by {|fruit| fruit[:color]}.each do |fruit|
-    print "These fruits are sorted by color."
+    puts "These fruits are sorted by color."
   end
 end
 ```
