@@ -27,6 +27,8 @@ then reverses that array returning and modifying the refrence to the original
 array.
 
 ```ruby
+test = [23, 56, 3, 7]
+
 test.sort!.reverse!
 ```
 
@@ -66,4 +68,6 @@ phrase = ["Hello", "World", "!"]
 phrase.each do |word|
   puts word
 end
+
+phrase.each { |word| puts word }
 ```
