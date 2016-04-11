@@ -33,8 +33,8 @@ array.
 What does an exclamation point after a method usually signify?
 
 ```ruby
-  # That the data will be altered permanently. It's called a permanent or dangerous change, because of course
-  # theres potential danger in permanently changing a variable you will contunue to use.
+  That the data will be altered permanently. Its called a permanent or dangerous change, because of course
+  theres potential danger in permanently changing a variable you will contunue to use.
 ```
 
 How do you create a class in Ruby?
@@ -56,5 +56,7 @@ the methods I added?
 Please give an example of iterating in Ruby?
 
 ```ruby
-  # your answer here
+@names.each do |name|
+  puts "Hello #{name}!"
+end
 ```
