@@ -55,7 +55,7 @@ If I modify a class in Ruby will already created instances of that class have
 the methods I added?
 
 ```ruby
-  yes, you can modify a class. The changes will be available for all existing objects in that class.
+  yes, you can modify a class. The changes will be available for all existing objects in that class. 
 ```
 
 Please give an example of iterating in Ruby?
