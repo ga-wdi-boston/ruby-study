@@ -42,6 +42,7 @@ How do you create a class in Ruby?
 
 ```ruby
   number = [23,56,3,7]
+  
 ```
 
 If I modify a class in Ruby will already created instances of that class have
