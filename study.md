@@ -19,7 +19,7 @@ Please write the code that would take the following integer `007` and return the
 string `"700"`
 
 ```ruby
-  # your answer here
+"007".reverse
 ```
 
 Please write the code that takes the following array `[23,56,3,7]` sorts it
@@ -27,30 +27,33 @@ then reverses that array returning and modifying the refrence to the original
 array.
 
 ```ruby
-  # your answer here
+  arr = [23,56,3,7]
+  arr.sort!.reverse!
 ```
 
 What does an exclamation point after a method usually signify?
 
 ```ruby
-  # your answer here
+It will modify the object it is called on
 ```
 
 How do you create a class in Ruby?
 
 ```ruby
-  # your answer here
+class nameofclass
 ```
 
 If I modify a class in Ruby will already created instances of that class have
 the methods I added?
 
 ```ruby
-  # your answer here
+Yes.
 ```
 
 Please give an example of iterating in Ruby?
 
 ```ruby
-  # your answer here
+arr.each do |num|
+   puts num
+end
 ```
