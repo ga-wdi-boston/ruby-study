@@ -21,27 +21,6 @@ string `"700"`
 ```ruby
 # Ruby's Integer class does not store leading zeros, so '007' is already an impossible thing for Ruby to store as an integer.  However, if you want to take the string '007' and return the string "700" you would use the following code
 
-# [10] pry(main)> 007
-# => 7
-# [11] pry(main)> '007'
-# => "007"
-# [12] pry(main)> 007.to_s.reverse
-# => "7"
-# [13] pry(main)> 007.to_s
-# => "7"
-# [14] pry(main)> '007'.reverse
-# => "700"
-# [15] pry(main)> 0000007
-# => 7
-# [16] pry(main)> 000000007
-# => 7
-# [17] pry(main)> 700.to_s
-# => "700"
-# [18] pry(main)> 700.to_s.reverse
-# => "007"
-# [19] pry(main)> 700.to_s.reverse.to_i
-# => 7
-
   007.reverse
 ```
 
