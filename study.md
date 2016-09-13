@@ -27,7 +27,9 @@ then reverses that array returning and modifying the refrence to the original
 array.
 
 ```ruby
-  # your answer here
+array = [23, 56, 3, 7]
+array.lines.to_a.reverse
+
 ```
 
 What does an exclamation point after a method usually signify?
