@@ -19,7 +19,7 @@ Please write the code that would take the following integer `007` and return the
 string `"700"`
 
 ```ruby
-  # your answer here
+  "007".reverse
 ```
 
 Please write the code that takes the following array `[23,56,3,7]` sorts it
