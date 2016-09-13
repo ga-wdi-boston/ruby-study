@@ -33,26 +33,32 @@ arr.sort!.reverse!
 
 What does an exclamation point after a method usually signify?
 
-```md
-The exclamation point makes the result of the method permanent; i.e., assigns
+```ruby
+The exclamation point makes the result of the method permanent, i.e., assigns
 the result to the current data rather than making a copy.
 ```
 
 How do you create a class in Ruby?
 
 ```ruby
-  # your answer here
+class className
+  # code goes here
+end
 ```
 
 If I modify a class in Ruby will already created instances of that class have
 the methods I added?
 
 ```ruby
-  # your answer here
+Yes.
 ```
 
-Please give an example of iterating in Ruby?
+Please give an example of iterating in Ruby.
 
 ```ruby
-  # your answer here
+fruits = ['apple', 'banana', 'strawberry']
+
+fruits.each do |fruit|
+  puts "#{fruit} is delicious!"
+end
 ```
