@@ -35,24 +35,25 @@ array.lines.to_a.reverse
 What does an exclamation point after a method usually signify?
 
 ```ruby
-//  Modification of the object that it's called on.
+# Modification of the object that it's called on.
 ```
 
 How do you create a class in Ruby?
 
 ```ruby
-  Class _____ <--name of class
+#  Class _____ <--name of class
 ```
 
 If I modify a class in Ruby will already created instances of that class have
 the methods I added?
 
 ```ruby
-  # your answer here
+# Yes.
 ```
 
 Please give an example of iterating in Ruby?
 
 ```ruby
-  # your answer here
+  # @names.each do |name|
+  # puts "Hello #{name}!"
 ```
