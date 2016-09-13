@@ -41,7 +41,7 @@ What does an exclamation point after a method usually signify?
 How do you create a class in Ruby?
 
 ```ruby
-  # your answer here
+  Class _____ <--name of class
 ```
 
 If I modify a class in Ruby will already created instances of that class have
