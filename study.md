@@ -35,7 +35,7 @@ array.lines.to_a.reverse
 What does an exclamation point after a method usually signify?
 
 ```ruby
-  # your answer here
+//  Modification of the object that it's called on.
 ```
 
 How do you create a class in Ruby?
