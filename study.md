@@ -19,7 +19,7 @@ Please write the code that would take the following integer `700` and return the
 string `"007"`
 
 ```ruby
-  # your answer here
+#  700.to_s.reverse
 ```
 
 Please write the code that takes the following array `[23,56,3,7]` sorts it
@@ -27,29 +27,57 @@ then reverses that array returning and modifying the refrence to the original
 array.
 
 ```ruby
-  # your answer here
+#  [23,56,3,7].sort!.reverse!
 ```
 
 What does an exclamation point after a method usually signify?
 
 ```ruby
-  # your answer here
+#  It tells ruby that we want to directly modify the original data with method we're using instead of creating a copy of the data with the method applied.
 ```
 How do you create a class in Ruby?
 
 ```ruby
-  # your answer here
+
+  class Greeter
+    def initialize(name = "Matt")
+      @name = name
+    end
+    def say_hi
+      puts "Hi #{@name}"
+    end
+  end
+
 ```
 
 If I modify a class in Ruby will already created instances of that class have
 the methods I added?
 
 ```ruby
-  # your answer here
+  # Yes, we are able to 'open' a class up and modify it. These changes will be present in any new object that we create and will be available in existing objects of that class.
 ```
 
 Please give an example of iterating in Ruby?
 
 ```ruby
-  # your answer here
+
+class Greeter
+  attr_accessor :names
+
+  def initialize(names = "World")
+    @names = names
+  end
+
+  def say_hi
+    if @name.nil?
+      puts "..."
+    elsif @name.respond_to?("each")
+      @names.each do |name|  # Pretty sure this is exactly where the iterating is happening.
+        puts "Hello #{name}"
+      end
+    else
+        puts "Hello #{@names}"
+    end
+
+
 ```
