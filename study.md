@@ -33,25 +33,51 @@ array.
 What does an exclamation point after a method usually signify?
 
 ```ruby
-#  It tells ruby that we want to directly modify the original array to match the output of the method we're using.
+#  It tells ruby that we want to directly modify the original data with method we're using instead of creating a copy of the data with the method applied.
 ```
 How do you create a class in Ruby?
 
 ```ruby
-  # Dog.color
+
+  class Greeter
+    def initialize(name = "Matt")
+      @name = name
+    end
+    def say_hi
+      puts "Hi #{@name}"
+    end
+  end
+
 ```
 
 If I modify a class in Ruby will already created instances of that class have
 the methods I added?
 
 ```ruby
-  # Yes.
+  # Yes, we are able to 'open' a class up and modify it. These changes will be present in any new object that we create and will be available in existing objects of that class.
 ```
 
 Please give an example of iterating in Ruby?
 
 ```ruby
-  # array.length.times do |i|
- 
+
+class Greeter
+  attr_accessor :names
+
+  def initialize(names = "World")
+    @names = names
+  end
+
+  def say_hi
+    if @name.nil?
+      puts "..."
+    elsif @name.respond_to?("each")
+      @names.each do |name|  # Pretty sure this is exactly where the iterating is happening.
+        puts "Hello #{name}"
+      end
+    else
+        puts "Hello #{@names}"
+    end
+
 
 ```
