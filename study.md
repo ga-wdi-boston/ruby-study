@@ -19,7 +19,9 @@ Please write the code that would take the following integer `700` and return the
 string `"007"`
 
 ```ruby
-  # your answer here
+# Ruby's Integer class does not store leading zeros, so '007' is already an impossible thing for Ruby to store as an integer.  However, if you want to take the string '007' and return the string "700" you would use the following code
+
+  007.reverse
 ```
 
 Please write the code that takes the following array `[23,56,3,7]` sorts it
@@ -27,29 +29,34 @@ then reverses that array returning and modifying the refrence to the original
 array.
 
 ```ruby
-  # your answer here
+[23,56,3,7].sort.reverse!
 ```
 
 What does an exclamation point after a method usually signify?
 
 ```ruby
-  # your answer here
+store the change that was just made into the original variable calling the action that caused the change.
 ```
 How do you create a class in Ruby?
 
 ```ruby
-  # your answer here
+# create a new class Foo
+class Foo
+end
 ```
 
 If I modify a class in Ruby will already created instances of that class have
 the methods I added?
 
 ```ruby
-  # your answer here
+  # Yes.  This is part of the beauty of OOP.
 ```
 
 Please give an example of iterating in Ruby?
 
 ```ruby
-  # your answer here
+  #  this will iterate from 1 to 10 and print each number along the way
+  1.upto(10) do |i|
+    p if
+  end
 ```
