@@ -21,8 +21,10 @@ material. Instead, digest what you've read and repeat it in your own voice.
 Write the Ruby code that takes the integer `700` and returns the string `"007"`.
 
 ```ruby
-# your answer here
+700.to_s
 ```
+
+[Poignant Guide](http://poignant.guide/book/chapter-3.html)
 
 ## Array Manipulation
 
@@ -31,8 +33,10 @@ manipulates it by sorting it and then reversing it in place (i.e., modifying the
 reference to the original).
 
 ```ruby
-# your answer here
+[23, 56, 3, 7].sort.reverse
 ```
+
+[Ruby Docs](http://ruby-doc.org/core-2.3.1/Array.html)
 
 ## Class#method!
 
@@ -40,15 +44,19 @@ What does an exclamation point after a method usually signify?  e.g.,
 `my_string.capitalize!`
 
 ```md
-<!-- your answer here -->
+A bang at the end of a method name usually signifies that it will permantly alter the object it's called on.
 ```
+
+[Stack Overflow](http://stackoverflow.com/questions/612189/why-are-exclamation-marks-used-in-ruby-methods)
 
 ## Instantiation
 How do you create an instance of a class in Ruby?
 
 ```ruby
-# your answer here
+Class.new
 ```
+
+[Ruby Docs](http://ruby-doc.org/core-2.3.1/Class.html)
 
 ## Class Modification
 
@@ -56,7 +64,30 @@ If a class in Ruby gets modified while there are existing instances of it, then
 will those instances also have those modifications?
 
 ```md
-<!-- your answer here -->
+Yes. The existing instances of the class will also be updated.
+```
+
+I used `irb` to test this myself.
+
+```ruby
+irb(main):032:0> class Stuff
+irb(main):033:1>  def do_math(x,y)
+irb(main):034:2>    x * y
+irb(main):035:2>  end
+irb(main):036:1> end
+=> :do_math
+irb(main):037:0> my_stuff = Stuff.new
+=> #<Stuff:0x007f81500300d8>
+irb(main):038:0> my_stuff.do_math(3,5)
+=> 15
+irb(main):039:0> class Stuff
+irb(main):040:1>  def do_math(x,y)
+irb(main):041:2>    x + y
+irb(main):042:2>  end
+irb(main):043:1> end
+=> :do_math
+irb(main):044:0> my_stuff.do_math(3,5)
+=> 8
 ```
 
 ## Iteration
@@ -64,5 +95,9 @@ will those instances also have those modifications?
 Write an example of iteration in Ruby.
 
 ```ruby
-# your answer here
+[1,2,3,4].each do |num|
+  num + 5
+end
 ```
+
+[Poignant Guide](http://poignant.guide/book/chapter-3.html)
