@@ -47,8 +47,7 @@ Changing the original instead of making a copy
 How do you create an instance of a class in Ruby?
 
 ```ruby
-class ClassName
-end
+x = Class.new()
 ```
 
 ## Class Modification
