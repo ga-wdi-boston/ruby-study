@@ -47,9 +47,10 @@ if you type a string, all lower case and use .capitalize it will capitalize the 
 How do you create an instance of a class in Ruby?
 
 ```ruby
-class
-
+class Example
+  ...
 end
+
 ```
 
 ## Class Modification
@@ -58,7 +59,7 @@ If a class in Ruby gets modified while there are existing instances of it, then
 will those instances also have those modifications?
 
 ```md
-yes
+yes, you can add code to classes and overwrite existing methods
 ```
 
 ## Iteration
