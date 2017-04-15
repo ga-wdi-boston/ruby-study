@@ -28,7 +28,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 Write the Ruby code that takes the integer `700` and returns the string `"007"`.
 
 ```ruby
-# your answer here
+700.to_s
 ```
 
 ## Array Manipulation
@@ -38,7 +38,10 @@ manipulates it by sorting it and then reversing it in place (i.e., modifying the
 reference to the original).
 
 ```ruby
-# your answer here
+array1 = [23, 56, 3, 7]
+array1.max
+array1.reverse!
+
 ```
 
 ## Class#method!
@@ -47,14 +50,30 @@ What does an exclamation point after a method usually signify?  e.g.,
 `my_string.capitalize!`
 
 ```md
-<!-- your answer here -->
+<!-- It signifies change to the object and not just a point to it.
+The green-checked response explains how I understand it.
+http://stackoverflow.com/questions/7179016/what-is-the-purpose-of-and-at-the-end-of-method-names-->
 ```
 
 ## Instantiation
 How do you create an instance of a class in Ruby?
 
 ```ruby
-# your answer here
+
+# Can instantiate a class in Ruby by typing the following in
+#the terminal (irb to get Ruby going in Terminal)
+class Greeter
+  def initialize(name = "World")
+    @name = name
+  end
+  def say_hi
+    puts "Hi #{@name}!"
+  end
+  def say_bye
+    puts "Bye #{@name}, come back soon."
+  end
+end
+
 ```
 
 ## Class Modification
@@ -63,7 +82,9 @@ If a class in Ruby gets modified while there are existing instances of it, then
 will those instances also have those modifications?
 
 ```md
-<!-- your answer here -->
+<!-- I'm a bit confused about this based on what I read but I'm thinking not at
+first.  It appears with looping the instances can be updated but would be interested in some clarification in
+class, if possible.  Am I understanding that, correctly? -->
 ```
 
 ## Iteration
@@ -71,5 +92,8 @@ will those instances also have those modifications?
 Write an example of iteration in Ruby.
 
 ```ruby
-# your answer here
+#
+@books.each do |name|
+  puts "East of Eden #{book}!"
+end
 ```
