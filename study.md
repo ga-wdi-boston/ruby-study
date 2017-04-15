@@ -28,7 +28,9 @@ material. Instead, digest what you've read and repeat it in your own voice.
 Write the Ruby code that takes the integer `700` and returns the string `"007"`.
 
 ```ruby
-# your answer here
+a = 700 / 100
+b = a.to_str
+puts '00' + b
 ```
 
 ## Array Manipulation
@@ -38,7 +40,9 @@ manipulates it by sorting it and then reversing it in place (i.e., modifying the
 reference to the original).
 
 ```ruby
-# your answer here
+a = [23, 56, 3, 7]
+b = a.sort
+b = b.reverse!
 ```
 
 ## Class#method!
@@ -47,14 +51,16 @@ What does an exclamation point after a method usually signify?  e.g.,
 `my_string.capitalize!`
 
 ```md
-<!-- your answer here -->
+It performs the functions action in place rather than returning the result.
 ```
 
 ## Instantiation
 How do you create an instance of a class in Ruby?
 
 ```ruby
-# your answer here
+class newClass
+ # somthing here
+end
 ```
 
 ## Class Modification
@@ -63,7 +69,7 @@ If a class in Ruby gets modified while there are existing instances of it, then
 will those instances also have those modifications?
 
 ```md
-<!-- your answer here -->
+No, the class is just a blueprint and the original class will not be impacted.
 ```
 
 ## Iteration
@@ -71,5 +77,7 @@ will those instances also have those modifications?
 Write an example of iteration in Ruby.
 
 ```ruby
-# your answer here
+for i in 1..10
+    print "hello"
+end
 ```
