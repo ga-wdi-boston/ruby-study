@@ -28,7 +28,9 @@ material. Instead, digest what you've read and repeat it in your own voice.
 Write the Ruby code that takes the integer `700` and returns the string `"007"`.
 
 ```ruby
-# your answer here
+int = 700
+string_int = int.to_s
+string_int
 ```
 
 ## Array Manipulation
@@ -38,7 +40,8 @@ manipulates it by sorting it and then reversing it in place (i.e., modifying the
 reference to the original).
 
 ```ruby
-# your answer here
+array =[23, 56, 3, 7]
+array.sort.reverse!
 ```
 
 ## Class#method!
@@ -47,14 +50,30 @@ What does an exclamation point after a method usually signify?  e.g.,
 `my_string.capitalize!`
 
 ```md
-<!-- your answer here -->
+It makes the method change to the original object, rather than to a copy of it.
 ```
 
 ## Instantiation
 How do you create an instance of a class in Ruby?
 
 ```ruby
-# your answer here
+#first you define a class
+class Lists
+  def  initialize (class_objs = "stuff")
+    @class_objs = class_objs
+  end
+def print_list
+  puts 'Here is your stuff: #{@class_objs}'
+  end
+end
+# then you can create an instance of the class
+mini_list = Lists.new("mini stuff")
+
+#then you can use the new object of the method with your instance methods.  For example
+mini_list.print_list
+# would return:
+'Here is your stuff: mini stuff'
+
 ```
 
 ## Class Modification
@@ -63,7 +82,7 @@ If a class in Ruby gets modified while there are existing instances of it, then
 will those instances also have those modifications?
 
 ```md
-<!-- your answer here -->
+Yes
 ```
 
 ## Iteration
@@ -71,5 +90,14 @@ will those instances also have those modifications?
 Write an example of iteration in Ruby.
 
 ```ruby
-# your answer here
+# for the method I wrote above you could add this method.  The each do part is the example of iteration.
+def list_things
+  if @class_objs.respond_to?("each")
+@class_objs.each do |class_obj|
+  puts "Here is another thing, #{class_obj}"
+end
+else
+  puts "Here is the only thing: #{@class_objs}"
+end
+end
 ```
