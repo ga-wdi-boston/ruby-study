@@ -28,9 +28,10 @@ material. Instead, digest what you've read and repeat it in your own voice.
 Write the Ruby code that takes the integer `700` and returns the string `"007"`.
 
 ```ruby
-# your answer here
+700.to_s.reverse
 ```
 
+Ruby Docs
 ## Array Manipulation
 
 Write the Ruby code that takes the following array, `[23, 56, 3, 7]`, and
@@ -38,24 +39,32 @@ manipulates it by sorting it and then reversing it in place (i.e., modifying the
 reference to the original).
 
 ```ruby
-# your answer here
+[23, 56, 3, 7].sort.reverse!
 ```
+
+Ruby Docs
 
 ## Class#method!
 
 What does an exclamation point after a method usually signify?  e.g.,
 `my_string.capitalize!`
 
+
+
 ```md
-<!-- your answer here -->
+Changing the object your calling the method on Vs returning a new object
+
+http://stackoverflow.com/questions/7179016/what-is-the-purpose-of-and-at-the-end-of-method-names
 ```
 
 ## Instantiation
 How do you create an instance of a class in Ruby?
 
 ```ruby
-# your answer here
+arlo = Person.new
 ```
+
+https://www.ruby-lang.org/en/documentation/quickstart/2/
 
 ## Class Modification
 
@@ -63,7 +72,8 @@ If a class in Ruby gets modified while there are existing instances of it, then
 will those instances also have those modifications?
 
 ```md
-<!-- your answer here -->
+I did some googling and I had trouble finding an answer. I'm not sure.
+
 ```
 
 ## Iteration
@@ -71,5 +81,10 @@ will those instances also have those modifications?
 Write an example of iteration in Ruby.
 
 ```ruby
-# your answer here
+arr = [1, 4, 6, 6].each do |value|
+  print value
+  print "\n"
+end
 ```
+
+https://www.thoughtco.com/using-each-beginning-ruby-control-structures-2641202
