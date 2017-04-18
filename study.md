@@ -28,7 +28,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 Write the Ruby code that takes the integer `700` and returns the string `"007"`.
 
 ```ruby
-# your answer here
+# 700.to_s.reverse
 ```
 
 ## Array Manipulation
@@ -38,7 +38,10 @@ manipulates it by sorting it and then reversing it in place (i.e., modifying the
 reference to the original).
 
 ```ruby
-# your answer here
+array = [23, 56, 3, 7]
+array.sort!
+array.reverse
+
 ```
 
 ## Class#method!
@@ -47,14 +50,16 @@ What does an exclamation point after a method usually signify?  e.g.,
 `my_string.capitalize!`
 
 ```md
-<!-- your answer here -->
+<!-- An exclamation mark at the end of a method signifies that you want to change the original value of the variable to whatever you are modifying that variable to using a specified method. -->
 ```
 
 ## Instantiation
 How do you create an instance of a class in Ruby?
 
 ```ruby
-# your answer here
+# You place a hashmark after the class and before the method of that class
+  i.e. doorBell#ring
+
 ```
 
 ## Class Modification
@@ -63,7 +68,7 @@ If a class in Ruby gets modified while there are existing instances of it, then
 will those instances also have those modifications?
 
 ```md
-<!-- your answer here -->
+<!-- Prior instances of the modified class will not be modified.  -->
 ```
 
 ## Iteration
@@ -71,5 +76,10 @@ will those instances also have those modifications?
 Write an example of iteration in Ruby.
 
 ```ruby
-# your answer here
+number = 0
+until number >= 10
+  puts number
+
+ number += 1
+end
 ```
