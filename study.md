@@ -53,7 +53,7 @@ What does an exclamation point after a method usually signify?  e.g.,
 ```md
 <!-- your answer here -->
 it modifies the original variable rather than copying and modifying it entirely
-combination of the ruby tutorial and learn ruby in 20min
+I used a combination of the ruby tutorial and learn ruby in 20min
 ```
 
 ## Instantiation
