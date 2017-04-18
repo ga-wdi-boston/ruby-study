@@ -29,6 +29,8 @@ Write the Ruby code that takes the integer `700` and returns the string `"007"`.
 
 ```ruby
 # your answer here
+700.to_s.reverse
+combination of the ruby tutorial and learn ruby in 20min
 ```
 
 ## Array Manipulation
@@ -39,6 +41,8 @@ reference to the original).
 
 ```ruby
 # your answer here
+[23, 56, 3, 7].sort.reverse!
+combination of the ruby tutorial and learn ruby in 20min
 ```
 
 ## Class#method!
@@ -48,6 +52,8 @@ What does an exclamation point after a method usually signify?  e.g.,
 
 ```md
 <!-- your answer here -->
+it modifies the original variable rather than copying and modifying it entirely
+I used a combination of the ruby tutorial and learn ruby in 20min
 ```
 
 ## Instantiation
@@ -55,6 +61,12 @@ How do you create an instance of a class in Ruby?
 
 ```ruby
 # your answer here
+class some class name here
+    def some method name here
+      @some instance variable name here
+      @maybe another instance variable name here
+    end
+    used the ruby-lang documentation
 ```
 
 ## Class Modification
@@ -64,6 +76,7 @@ will those instances also have those modifications?
 
 ```md
 <!-- your answer here -->
+yes
 ```
 
 ## Iteration
@@ -72,4 +85,9 @@ Write an example of iteration in Ruby.
 
 ```ruby
 # your answer here
+def some method name
+  @some iteration name.each do
+    puts "some string #{some parameter}!"
+  end
+
 ```
