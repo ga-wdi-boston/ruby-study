@@ -85,4 +85,9 @@ Write an example of iteration in Ruby.
 
 ```ruby
 # your answer here
+def some method name
+  @some iteration name.each do
+    puts "some string #{some parameter}!"
+  end
+
 ```
