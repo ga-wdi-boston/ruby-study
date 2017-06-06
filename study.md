@@ -29,7 +29,7 @@ Write the Ruby code that takes the integer `700` and returns the string `"007"`.
 
 ```ruby
 int = 700
-string = int.to_s
+string = int.to_s.reverse
 p string
 ```
 
